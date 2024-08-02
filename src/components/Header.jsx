@@ -1,10 +1,9 @@
 import Navigation from "./Navigation";
 
-const Header = ({ currentSection, setCurrentSection }) => {
+const Header = () => {
   return (
     <header>
       <h1>Tess McGovern</h1>
-      <Navigation currentSection={currentSection} setCurrentSection={setCurrentSection} />
     </header>
   );
 };
