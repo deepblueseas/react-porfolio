@@ -5,4 +5,26 @@
 
 ## Table of Contents
 
-##
+## Acceptance Criteria
+> - GIVEN an SPA (single-page application) portfolio
+> - When I load the portfolio
+>   - Then I am presented with a page containing:
+>       - a header
+>       - a section for content
+>       - a footer
+> - When I view the **header**
+>   - Then I am presented with:
+>       - developer's name
+>       - navigation with titles
+> - When I view the **navigation titles**
+>   - Then I am presented with the following options for **Sections** (which highlight when displayed):
+>       - About Me
+>            - Recent photo or avatar of developer and a short bio
+>       - Portfolio
+>            - Six images of applications with links
+>       - Contact
+>            - Form with fields for a name, email address, and message
+>       - Resume
+>            -Downloadable resume
+> - When I load the portfolio for the first time, the About Me is selected by default
+> - The **Footer** contains links to Github, LinkedIn, and any other platforms
