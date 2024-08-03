@@ -1,9 +1,9 @@
 const projects = [
     {
-      title: 'Project 1',
-      imageUrl: '/path/to/image1.jpg',
-      deployedUrl: 'https://deployed-app-1.com',
-      githubUrl: 'https://github.com/user/repo1',
+      title: 'Time Capsule Group Project',
+      imageUrl: 'src/assets/images/timecapsulereadme.png',
+      deployedUrl: 'https://beeceetee.github.io/TimeCapsule/',
+      githubUrl: 'https://github.com/BeeCeeTee/TimeCapsule',
     },
     {
       title: 'Project 2',
