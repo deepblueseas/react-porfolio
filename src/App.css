@@ -1,0 +1,36 @@
+.App {
+    background-color: rgb(244, 230, 255);
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 207, 246);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px; 
+  }
+  
+  .header-title {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .main-header-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+

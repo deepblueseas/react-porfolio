@@ -2,7 +2,7 @@ export default function Footer() {
     const linkStyle = { border: '1px black', padding: '5px' };
   
     return (
-      <nav className="main-header-menu">
+      <nav className="footer">
         <section
           style={{
             display: 'flex',
