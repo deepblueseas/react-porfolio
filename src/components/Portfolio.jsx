@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
 
 const projects = [
   {
@@ -14,22 +15,21 @@ const projects = [
     githubUrl: 'https://github.com/user/repo2',
   },
   {
-    title: 'Project 3',
-    imageUrl: '/path/to/image3.jpg',
-    deployedUrl: 'https://deployed-app-3.com',
-    githubUrl: 'https://github.com/user/repo3',
+    title: 'Task Board',
+    imageUrl: 'src/assets/images/taskboard.png',
+    deployedUrl: 'https://deepblueseas.github.io/task-board/',
+    githubUrl: 'https://github.com/deepblueseas/task-board',
   },
   {
-    title: 'Project 4',
-    imageUrl: '/path/to/image4.jpg',
-    deployedUrl: 'https://deployed-app-4.com',
-    githubUrl: 'https://github.com/user/repo4',
+    title: 'Note Taker',
+    imageUrl: 'src/assets/images/expressnotetaker.png',
+    deployedUrl: 'https://express-note-taker-2nps.onrender.com/',
+    githubUrl: 'https://github.com/deepblueseas/express-note-taker',
   },
   {
-    title: 'Project 5',
-    imageUrl: '/path/to/image5.jpg',
-    deployedUrl: 'https://deployed-app-5.com',
-    githubUrl: 'https://github.com/user/repo5',
+    title: 'E-commerce Backend',
+    imageUrl: 'src/assets/images/ecommercebackend.png',
+    githubUrl: 'https://github.com/deepblueseas/ecommerce-backend',
   },
   {
     title: 'Project 6',
@@ -43,19 +43,19 @@ export default function Portfolio() {
   return (
     <Container className="portfolio-container">
       <div className='portfolio-name'>
-      <h2 className='portfolio-title'>Portfolio</h2>
-      <h3>Below are some examples of applications I worked on in the CWRU Bootcamp</h3>
+        <h2 className='portfolio-title'>Portfolio</h2>
+        <h3>Below are some examples of applications I worked on in the CWRU Bootcamp Spring 2024</h3>
       </div>
       <Row>
         {projects.map((project, index) => (
           <Col key={index} md={4} className="mb-4">
-            <Card>
+            <Card className="project-card">
               <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer">
-                <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
+                <Card.Img variant="top" src={project.imageUrl} alt={project.title} className="project-image" />
               </a>
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
-                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark project-button">
                   View on GitHub
                 </a>
               </Card.Body>
