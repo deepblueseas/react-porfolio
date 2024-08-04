@@ -4,9 +4,9 @@
 > For one of our first challenges in the CWRU coding bootcamp, we used basic HTML and CSS to create a professional portfolio.  Now, for one of our last challenges, we are creating a portfolio using React and a more polished UI.
 
 ## Table of Contents
-I. [Acceptance Critera](#acceptance-criteria)
-II. [Deployed Site](https://lambent-croquembouche-17ea12.netlify.app/)
-III. [Image of Site](#image-of-site)
+I. [Acceptance Critera](#acceptance-criteria) <br>
+II. [Deployed Site](https://lambent-croquembouche-17ea12.netlify.app/) <br>
+III. [Image of Site](#image-of-site) <br>
 
 ## Acceptance Criteria
 > - GIVEN an SPA (single-page application) portfolio
