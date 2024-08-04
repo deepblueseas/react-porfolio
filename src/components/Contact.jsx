@@ -44,14 +44,7 @@ export default function Contact() {
     <Card className="contact-card">
       <Card.Body>
         <Card.Title>Contact Me</Card.Title>
-        <Form
-          name="contact"
-          method="POST"
-          action="/.netlify/functions/sendEmail"
-          className="contact-form"
-          onSubmit={handleSubmit}
-        >
-          <input type="hidden" name="form-name" value="contact" />
+        <Form className="contact-form" onSubmit={handleSubmit}>
           <Form.Group controlId="name">
             <Form.Label>Name</Form.Label>
             <Form.Control
