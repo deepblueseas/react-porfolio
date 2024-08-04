@@ -2,9 +2,10 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import timeCapsuleImage from '../assets/images/timecapsulereadme.png';
 import employeePayrollImage from '../assets/images/employeepayrollimage.png';
-import taskBoard from '../assets/images/taskboard.png'
-import noteTaker from '../assets/images/expressnotetaker.png'
-import ecommerceBackend from '../assets/images/ecommercebackend.png'
+import taskBoard from '../assets/images/taskboard.png';
+import noteTaker from '../assets/images/expressnotetaker.png';
+import ecommerceBackend from '../assets/images/ecommercebackend.png';
+import svgLogoMaker from '../assets/images/svglogomaker.png';
 
 const projects = [
   {
@@ -37,10 +38,9 @@ const projects = [
     githubUrl: 'https://github.com/deepblueseas/ecommerce-backend',
   },
   {
-    title: 'Project 6',
-    imageUrl: '/path/to/image6.jpg',
-    deployedUrl: 'https://deployed-app-6.com',
-    githubUrl: 'https://github.com/user/repo6',
+    title: 'SVG Logo Maker',
+    imageUrl: svgLogoMaker,
+    githubUrl: 'https://github.com/deepblueseas/svg-logo-generator',
   },
 ];
 
