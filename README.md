@@ -34,3 +34,6 @@ III. [Image of Site](#image-of-site)
 
 ## Image of Site
 ![About Me](src/assets/images/exampleofportfolio.png)
+
+## Deployed Site
+[Click Here to Visit](https://lambent-croquembouche-17ea12.netlify.app/)
