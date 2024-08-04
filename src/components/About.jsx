@@ -1,8 +1,10 @@
+import profilePic from '../assets/images/profilepic.png';
+
 const About = () => {
   return (
     <section className="about-me">
       <div className="profile-pic-container">
-        <img src="src/assets/images/profilepic.png" alt="Profile Picture" className="profile-pic" />
+        <img src={profilePic} alt="Profile Picture" className="profile-pic" />
       </div>
       <div className="bio">
         <h2>About Me</h2>
