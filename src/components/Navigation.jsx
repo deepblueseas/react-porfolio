@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Navigation = ({ currentSection, setCurrentSection }) => {
   const linkStyle = {
     border: '1px solid black',
@@ -12,7 +10,8 @@ const Navigation = ({ currentSection, setCurrentSection }) => {
 
   const activeLinkStyle = {
     ...linkStyle,
-    backgroundColor: 'rgb(246, 246, 166)',
+    backgroundColor: '#f6bd60',
+    boxShadow: '0 0 10px 5px rgba(246, 246, 166, 0.8)',
   };
 
   return (

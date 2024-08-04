@@ -1,36 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
 .App {
-    background-color: rgb(244, 230, 255);
+    background-color: #d9e0f0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(182, 207, 246);
+    background-color: #4a4e69;
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 20px;
+    border-color: #f5cac3;
   }
   
   .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between the left section and the centered navigation */
     align-items: center;
     width: 100%;
     max-width: 1000px;
     padding: 0 20px; 
   }
   
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
   .header-title {
     margin: 0;
     font-size: 2em;
-    color: #333;
+    color: #e8dfdf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .header-icon {
+    color: #e8dfdf;
+    margin-right: 20px; 
+  }
+  
+  .header-navigation {
+    display: flex;
+    justify-content: center;
   }
   
   .main-header-menu {
     display: flex;
     align-items: center;
   }
-  
 
+  .about-me {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; 
+    max-width: 800px; 
+    margin: 0 auto;
+  }
+  
+  .profile-pic-container {
+    flex: 1; 
+    max-width: 150px; 
+  }
+  
+  .profile-pic {
+    width: 100%;
+    border-radius: 50%; 
+  }
+  
+  .bio {
+    flex: 1; 
+    text-align: left; 
+  }
+  
+  .bio h2 {
+    color: rgb(57, 53, 53);
+    font-weight: bolder;
+    margin-bottom: 20px; 
+  }
+  
+  .bio p {
+    color: rgb(57, 53, 53);
+    font-weight: 800;
+    margin-bottom: 15px; 
+  }
+
+  .portfolio-name {
+    padding: 20px;
+    margin-bottom: 30px;;
+  }
+
+
+
+  .footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  @media (max-width: 768px) { 
+    .main-header-menu {
+      flex-direction: column; 
+      align-items: flex-start; 
+      width: 100%;
+    }
+  
+    .main-header-menu div {
+      width: 100%;
+      margin: 10px 0; 
+    }
+  }

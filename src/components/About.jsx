@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section className="about-me">
       <div className="profile-pic-container">
-        {/* <img src={img} alt="Profile" className="profile-pic" /> */}
+        <img src="src/assets/images/profilepic.png" alt="Profile Picture" className="profile-pic" />
       </div>
       <div className="bio">
         <h2>About Me</h2>
@@ -11,7 +11,7 @@ const About = () => {
         </p>
         <p>
           I am gaining experience in HTML, CSS, Javascript, NodeJS/Express, SQL, Mongoose, React, and have worked on command-line apps using Inquirer and Jest.  For our second and 
-          third group projects, we used third-party APIS, and I have some experience with turning things into a PWA.
+          third group projects, we used third-party APIS, and I have some experience with turning applications into a PWA.
         </p>
       </div>
     </section>
