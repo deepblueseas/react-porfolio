@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-exports.handler = async (event, context) => {
+exports.handler = async (event) => {
   const { name, email, message } = JSON.parse(event.body);
 
   const transporter = nodemailer.createTransport({
@@ -25,6 +25,7 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({ message: 'Email sent' }),
     };
   } catch (error) {
+    console.error('Error sending email:', error);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: 'Failed to send email' }),

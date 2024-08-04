@@ -8,6 +8,8 @@ export default function Contact() {
     message: '',
   });
 
+  const [status, setStatus] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -16,8 +18,26 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      const response = await fetch('/.netlify/functions/sendEmail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Email sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus('Failed to send email.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('Failed to send email.');
+    }
   };
 
   return (
@@ -28,6 +48,7 @@ export default function Contact() {
           name="contact"
           method="POST"
           action="/.netlify/functions/sendEmail"
+          className="contact-form"
           onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -66,6 +87,7 @@ export default function Contact() {
             Submit
           </Button>
         </Form>
+        {status && <p>{status}</p>}
       </Card.Body>
     </Card>
   );
