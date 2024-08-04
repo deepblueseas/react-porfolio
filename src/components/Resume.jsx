@@ -1,5 +1,5 @@
-import { Container, Row, Col, Button } from 'react-bootstrap';
-
+import { Container, Row, Col } from 'react-bootstrap';
+import resume from '../assets/images/tessresume.png';
 
 export default function Resume() {
   const proficiencies = [
@@ -18,7 +18,7 @@ export default function Resume() {
       <Row className="justify-content-center">
         <Col md={8} lg={6}>
           <h2>Resume</h2>
-          <a href="{resume1}{resume2}" download className="btn btn-primary mb-4 resume-btn">
+          <a href={resume} download className="btn btn-primary mb-4 resume-btn">
             Download Resume
           </a>
           <h3>Proficiencies</h3>
