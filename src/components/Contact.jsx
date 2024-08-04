@@ -1,31 +1,6 @@
-import { useState } from 'react';
 import { Card, Button, Form } from 'react-bootstrap';
 
 export default function Contact() {
-  const [status, setStatus] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(e.target);
-
-    try {
-      const response = await fetch('/', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        setStatus('Email sent successfully!');
-      } else {
-        setStatus('Failed to send email.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      setStatus('Failed to send email.');
-    }
-  };
-
   return (
     <Card className="contact-card">
       <Card.Body>
@@ -34,7 +9,6 @@ export default function Contact() {
           name="contact"
           method="POST"
           netlify
-          onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
           <Form.Group controlId="name">
@@ -69,7 +43,6 @@ export default function Contact() {
             Submit
           </Button>
         </Form>
-        {status && <p>{status}</p>}
       </Card.Body>
     </Card>
   );
