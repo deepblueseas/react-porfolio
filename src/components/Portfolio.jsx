@@ -1,34 +1,39 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
+import 'bootstrap/dist/css/bootstrap.min.css';
+import timeCapsuleImage from '../assets/images/timecapsulereadme.png';
+import employeePayrollImage from '../assets/images/employeepayrollimage.png';
+import taskBoard from '../assets/images/taskboard.png'
+import noteTaker from '../assets/images/expressnotetaker.png'
+import ecommerceBackend from '../assets/images/ecommercebackend.png'
 
 const projects = [
   {
     title: 'Time Capsule Group Project',
-    imageUrl: 'src/assets/images/timecapsulereadme.png',
+    imageUrl: timeCapsuleImage,
     deployedUrl: 'https://beeceetee.github.io/TimeCapsule/',
     githubUrl: 'https://github.com/BeeCeeTee/TimeCapsule',
   },
   {
     title: 'Employee Payroll Tracker',
-    imageUrl: 'src/assets/images/employeepayrollimage.png',
+    imageUrl: employeePayrollImage,
     deployedUrl: 'https://github.com/deepblueseas/employee-payroll-tracker',
     githubUrl: 'https://github.com/user/repo2',
   },
   {
     title: 'Task Board',
-    imageUrl: 'src/assets/images/taskboard.png',
+    imageUrl: taskBoard,
     deployedUrl: 'https://deepblueseas.github.io/task-board/',
     githubUrl: 'https://github.com/deepblueseas/task-board',
   },
   {
     title: 'Note Taker',
-    imageUrl: 'src/assets/images/expressnotetaker.png',
+    imageUrl: noteTaker,
     deployedUrl: 'https://express-note-taker-2nps.onrender.com/',
     githubUrl: 'https://github.com/deepblueseas/express-note-taker',
   },
   {
     title: 'E-commerce Backend',
-    imageUrl: 'src/assets/images/ecommercebackend.png',
+    imageUrl: ecommerceBackend,
     githubUrl: 'https://github.com/deepblueseas/ecommerce-backend',
   },
   {
