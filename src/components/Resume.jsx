@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import resume from '../assets/images/tessresume.png';
+import resume from '../assets/images/resume.png';
 
 export default function Resume() {
   const proficiencies = [
